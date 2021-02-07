@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    try{
+    int number;
+    Scanner inputName = new Scanner (System.in);
+    System.out.print("Please enter your age:");
+    number = inputName.nextInt();
+    int sum = (5*number)+300;
+    System.out.println("Estimated Life Insurance cost is $"+ sum+"/year");
+    inputName.close();
+    }catch(Exception e){
+      System.out.println("Please enter number only");
+    }
+  }
+}
